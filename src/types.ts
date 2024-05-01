@@ -21,7 +21,7 @@ export type SectionFormElement = FormElementCommonProperties<"section"> & {
   children: Array<any>;
 };
 
-type StringFormElement = FormElementCommonProperties<"string"> & {
+export type StringFormElement = FormElementCommonProperties<"string"> & {
   defaultValue: string | null;
   readOnly: boolean;
   required: boolean;
