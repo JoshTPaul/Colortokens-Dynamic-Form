@@ -1,9 +1,10 @@
 import { PasswordFormElement } from "../../../types";
+import Label from "../Label";
 
 function PasswordInput(props: PasswordFormElement) {
   return (
     <div>
-      <label htmlFor={props.key}>{props.displayName}</label>
+      <Label {...props} />
       <input
         id={props.key}
         name={props.key}

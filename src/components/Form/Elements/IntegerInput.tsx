@@ -1,9 +1,10 @@
 import { IntegerFormElement } from "../../../types";
+import Label from "../Label";
 
 function IntegerInput(props: IntegerFormElement) {
   return (
     <div>
-      <label htmlFor={props.key}>{props.displayName}</label>
+      <Label {...props} />
       <input
         id={props.key}
         name={props.key}
