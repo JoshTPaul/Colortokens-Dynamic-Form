@@ -29,7 +29,7 @@ export type StringFormElement = FormElementCommonProperties<"string"> & {
   information: string;
 };
 
-type PasswordFormElement = FormElementCommonProperties<"password"> & {
+export type PasswordFormElement = FormElementCommonProperties<"password"> & {
   defaultValue: null;
   readOnly: boolean;
   required: boolean;
