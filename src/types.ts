@@ -12,7 +12,7 @@ type FormElementCommonProperties<T extends FormElementType> = {
   type: T;
 };
 
-type SectionFormElement = FormElementCommonProperties<"section"> & {
+export type SectionFormElement = FormElementCommonProperties<"section"> & {
   defaultValue: null;
   readOnly: boolean;
   required: boolean;
