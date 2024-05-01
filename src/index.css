@@ -98,6 +98,10 @@ label {
   justify-content: space-between;
 }
 
+label span sup {
+  color: rgb(188, 47, 47);
+}
+
 .tooltip {
   position: relative;
   cursor: help;
