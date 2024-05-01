@@ -46,7 +46,7 @@ type DropdownPossibleValue = {
   Type: string;
 };
 
-type DropdownFormElement = FormElementCommonProperties<"dropdown"> & {
+export type DropdownFormElement = FormElementCommonProperties<"dropdown"> & {
   defaultValue: string;
   readOnly: boolean;
   required: boolean;
