@@ -56,7 +56,7 @@ type DropdownFormElement = FormElementCommonProperties<"dropdown"> & {
   identifier: string;
 };
 
-type IntegerFormElement = FormElementCommonProperties<"integer"> & {
+export type IntegerFormElement = FormElementCommonProperties<"integer"> & {
   defaultValue: number | null;
   readOnly: boolean;
   required: boolean;

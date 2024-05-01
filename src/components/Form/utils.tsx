@@ -1,4 +1,5 @@
 import { FormElement } from "../../types";
+import IntegerInput from "./Elements/IntegerInput";
 import Section from "./Elements/Section";
 
 export const getFormElements = (data: Array<FormElement>) => {
@@ -6,7 +7,7 @@ export const getFormElements = (data: Array<FormElement>) => {
     section: Section,
     dropdown: () => <p>Dropdown</p>,
     string: () => <p>String</p>,
-    integer: () => <p>Integer</p>,
+    integer: IntegerInput,
     password: () => <p>Password</p>,
   };
 
