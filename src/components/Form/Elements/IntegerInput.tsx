@@ -11,6 +11,7 @@ function IntegerInput(props: IntegerFormElement) {
         defaultValue={props.defaultValue || ""}
         disabled={props.readOnly}
         placeholder={props.placeholder}
+        required={props.required}
       />
     </div>
   );
