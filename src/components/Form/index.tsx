@@ -4,7 +4,7 @@ import { getFormElements } from "./utils";
 function FormGenerator() {
   const formElements = getFormElements(FORM_PAYLOAD);
 
-  return <div>{formElements}</div>;
+  return <form>{formElements}</form>;
 }
 
 export default FormGenerator;
