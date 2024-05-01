@@ -1,9 +1,9 @@
 import { SectionFormElement } from "../../../types";
 import Tooltip from "../Tooltip";
-import { getFormElements } from "../utils";
+import { getFormElementComponents } from "../utils";
 
 function Section(props: SectionFormElement) {
-  const childrenFormElements = getFormElements(props.children);
+  const childElementComponents = getFormElementComponents(props.children);
 
   return (
     <section>
@@ -11,7 +11,7 @@ function Section(props: SectionFormElement) {
         {props.displayName}
         <Tooltip text={props.information} />
       </h2>
-      {childrenFormElements}
+      {childElementComponents}
     </section>
   );
 }

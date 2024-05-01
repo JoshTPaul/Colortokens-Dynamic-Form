@@ -1,10 +1,14 @@
-import { FORM_PAYLOAD } from "../../constants";
-import { getFormElements } from "./utils";
+import { FormElement } from "../../types";
+import { getFormElementComponents } from "./utils";
 
-function FormGenerator() {
-  const formElements = getFormElements(FORM_PAYLOAD);
+type Props = {
+  elements: Array<FormElement>;
+};
 
-  return <form>{formElements}</form>;
+function FormGenerator({ elements }: Props) {
+  const formElementComponents = getFormElementComponents(elements);
+
+  return <form>{formElementComponents}</form>;
 }
 
 export default FormGenerator;
