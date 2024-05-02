@@ -1,4 +1,4 @@
-import FormGenerator from "./components/Form";
+import FormGenerator from "./components/FormGenerator";
 import { FORM_PAYLOAD } from "./constants";
 
 function App() {
