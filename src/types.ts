@@ -37,11 +37,11 @@ export type PasswordFormElement = FormElementCommonProperties<"password"> & {
   information: string;
 };
 
-type DropdownPossibleValue = {
+export type DropdownPossibleValue = {
   displayName: string;
   key: string;
   defaultValue: string;
-  children: null;
+  children: Array<FormElement> | null;
   identifier: string;
   Type: string;
 };
